@@ -78,6 +78,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChatHub.cs" />
+    <Compile Include="IClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -95,6 +97,12 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\jquery.signalR-2.2.3.js" />
     <Content Include="Scripts\jquery.signalR-2.2.3.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Schulzy.ChatApp.Model\Schulzy.ChatApp.Model.csproj">
+      <Project>{6c3dcb47-31d3-46a5-ad37-7cff6cd33c2a}</Project>
+      <Name>Schulzy.ChatApp.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
